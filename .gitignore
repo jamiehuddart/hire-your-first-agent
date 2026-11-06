@@ -1,0 +1,16 @@
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Office lock files
+~$*
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Environment files, never commit secrets
+.env
+.env.*
