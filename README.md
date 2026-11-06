@@ -2,10 +2,12 @@
 
 A retro arcade game for the High Intent Labs cohort. You run a fictional start-up and hire AI agents to take on real business jobs. Build each agent from its parts (job description, tools, context, guardrails, human checkpoints), send it to work, and watch it succeed or fail. Every level unlocks a use-case card you can take back to your own business.
 
+**Play it:** https://jamiehuddart.github.io/hire-your-first-agent/
+
 **Status:** all seven levels and the boss level are playable. See [PRD.md](PRD.md) for the full product requirements.
 
 ## How to play
-1. Open the game (GitHub Pages link coming soon) and press **START**.
+1. Open the game and press **START**.
 2. Each level gives you a business problem. Build an agent by picking its job description, tools, guardrail, context and human checkpoint.
 3. Send it to work and watch it plan, act and observe. Then see how it scored on outcome, safety, cost and speed.
 4. Get one star to unlock the next level, two stars for a use-case card and three for a bonus card.

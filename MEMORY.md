@@ -8,8 +8,8 @@ Keep this file up to date at all times. Read it, along with `CLAUDE.md`, at the 
 - [x] Jamie answered the PRD's open questions; PRD updated to v0.2 (2026-11-06)
 - [x] Created the public repo https://github.com/jamiehuddart/hire-your-first-agent and pushed this folder to `main`, with a `README.md` and `.gitignore` (2026-11-06)
 - [x] Built the full campaign in `site/`: Levels 1 to 7, the boss level (Agent Spec builder), 14 use-case cards, high scores and saving. Checked that all 954 build combinations reach an outcome, and play-tested at laptop and phone size (2026-11-06)
-- [ ] Jamie plays it and gives feedback (not yet committed or pushed)
-- [ ] Commit, push, and switch on GitHub Pages. Note: "Deploy from a branch" only serves the repo root or `/docs`, and the game is in `site/`, so publish it with a small GitHub Actions workflow that deploys `site/`
+- [x] Published on GitHub Pages: https://jamiehuddart.github.io/hire-your-first-agent/ . `.github/workflows/pages.yml` deploys `site/` on every push to `main`; Pages source is set to "GitHub Actions" in the repo settings (2026-11-06)
+- [ ] Jamie plays it and gives feedback
 - [ ] Share the link with the cohort
 - [ ] Later: side modes ("Agent or Not?", "Spot the Flaw"), share card, more cards
 
@@ -24,6 +24,8 @@ Keep this file up to date at all times. Read it, along with `CLAUDE.md`, at the 
 - Browsers block a page opened from disk (`file://`) from loading `.json` files, so the content is stored as `.js` files instead.
 - To preview locally without Node or Python, a short PowerShell script can serve the folder (`System.Net.HttpListener`). The preview config lives in `HIL Course/.claude/launch.json`, outside the repo.
 - Testing every combination automatically (954 builds) catches gaps that clicking through by hand would miss.
+
+- GitHub Pages' "Deploy from a branch" only serves the repo root or `/docs`. For a game in `site/`, a GitHub Actions workflow publishes that folder instead; the repo's Pages source must be set to "GitHub Actions" (a one-off click in Settings > Pages).
 
 ## Key takeaways
 - Write the brief once, in `CLAUDE.md`, and keep the detailed scope in `PRD.md`, so every session builds against the same plan.
