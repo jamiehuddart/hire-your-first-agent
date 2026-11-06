@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | Owner | Jamie Huddart |
-| Status | v0.2, open questions resolved |
+| Status | v0.3, campaign built (see section 15) |
 | Date | 6 November 2026 |
 | Course | High Intent Labs (HIL), Task 2 |
 | Repo | Public GitHub repo (to be created), hosted on GitHub Pages |
@@ -194,3 +194,19 @@ my Game/
 | Leaderboard | Local high scores only in v1; a shared leaderboard moves to Later |
 | Repo | Public, hosted on GitHub Pages |
 | Seb's brief | No requirements beyond the brief: a fun game website in a GitHub repo |
+
+## 15. Build status (6 November 2026)
+
+Built ahead of the milestones above, at Jamie's request:
+- All seven levels and the boss level, playable end to end: brief, build, run, review.
+- Every combination of choices in every level (954 in total) leads to a written outcome with its own lesson.
+- Levels unlock in order with one star. Each level awards two use-case cards (two stars and three stars), so there are 14 cards, plus the player's own agent from the boss level.
+- The boss level scores the player's spec against the lessons from Levels 1 to 7, and offers it as a copyable and downloadable Markdown file.
+- Arcade high-score table with initials, saved in the browser.
+
+Changes from the plan:
+- Content files are `.js`, not `.json`, so the game also runs when `index.html` is opened straight from disk.
+- 14 cards at launch rather than 30 or more; more can be added in `site/data/cards.js`.
+- The side modes ("Agent or Not?" and "Spot the Flaw") and the share card are not built yet.
+
+Still to do: switch on GitHub Pages, a cohort playtest, then the side modes and share card.
